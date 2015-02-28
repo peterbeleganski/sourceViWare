@@ -1,0 +1,53 @@
+
+body.color-red a,
+body.color-red a:focus,
+body.color-red a:hover,
+body.color-red .navbar-default .navbar-brand,
+body.color-red .navbar-default .navbar-brand:hover,
+body.color-red #slideshow .feature i,
+body.color-red #team span,
+body.color-red label,
+body.color-red .box ul li i,
+body.color-red .categories ul li:hover i,
+body.color-red ul.blog-detail li i {
+	color:#CB2027;
+}
+
+body.color-red .btn-normal,
+body.color-red .btn-normal:focus,
+body.color-red .scroll-up,
+body.color-red .navbar-default .navbar-nav > li.active > a,
+body.color-red .navbar-default .navbar-nav > li.active > a:hover,
+body.color-red .navbar-default .navbar-nav > li.active > a:focus,
+body.color-red .navbar-default .navbar-nav > li > ul.dropdown-menu > li > a:hover,
+body.color-red #search-form .input-group .btn,
+body.color-red .content-headline,
+body.color-red #slideshow,
+body.color-red .overlay-wrapper .overlay a,
+body.color-red #footer ul li a:hover,
+body.color-red ul.blog-tags li a,
+body.color-red .blog-post .blog-info:after,
+body.color-red .blog-post .blog-info .date div.number {
+    background-color: #CB2027;
+}
+
+body.color-red .navbar,
+body.color-red .navbar-default .navbar-nav > li > ul.dropdown-menu,
+body.color-red .form-control:focus,
+body.color-red #search-form .input-group .btn,
+body.color-red #services .row div:hover i {
+	border-color:#CB2027;
+}
+
+
+
+/*------------------------------
+	EXTRA SMALL DEVICES
+------------------------------*/
+
+@media (max-width:767px) {
+
+	body.color-red #services .row div i {
+		border-color:#CB2027;
+	}
+

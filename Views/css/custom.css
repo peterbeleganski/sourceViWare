@@ -1,0 +1,442 @@
+@import url('elements-bootstrap.css');
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 93px;
+}
+
+h1 {
+	display:none;
+}
+
+a,
+a:focus,
+a:hover {
+	outline:0 none;
+	text-decoration:none;
+	color:#54B132;
+}
+
+p {
+	margin: 0 0 20px;
+	line-height:21px;
+	font-size:13px;
+}
+
+
+
+/* IMAGE STYLES */
+
+img.image-bordered  {
+	background-color: rgba(255,255,255,0.4);
+	padding:4px;
+}
+
+
+
+/* BOXES */
+
+.box {
+	background-color:#FFFFFF;
+	padding:10px 20px;
+	box-shadow:0 1px 2px 0 rgba(0,0,0,0.1);
+	margin-bottom:20px;
+}
+
+.box h3 {
+    margin: 30px 0 5px;
+	font-weight:bold;
+}
+
+.box ul {
+	margin:0;
+}
+
+.box ul li {
+	font-size:13px;
+	border-bottom:1px dashed #DDDDDD;
+	padding:10px 0;
+	font-weight:600;
+}
+
+.box ul li:last-child {
+	border-bottom:0;
+}
+
+.box ul li i {
+	font-size:18px;
+	margin-right:20px;
+}
+
+body .box.categories ul li i {
+	color:#BBBBBB;	
+	position:relative;
+	top:2px;
+}
+
+
+
+body div ul.blog-tags li i,
+body div .box.tags ul li i {
+	color: #FFFFFF;
+	position:relative;
+	top:1px;
+	font-size: 14px;
+}
+
+
+
+#services .row div {
+	text-align:center;
+}
+
+#services .row div i {
+	border:10px solid #DDDDDD;
+	font-size:50px;
+	width:130px;
+	height:130px;
+	padding-top:30px;
+	border-radius:50%;
+	color:#999999;
+}
+
+#services .row div:hover i {
+	transition-duration:1s;
+}
+
+#services h4 {
+	font-size:20px;
+	font-weight:bold;
+	margin:20px 0 15px;
+	color:#555555;
+}
+
+#services p {
+	padding:0 15px;	
+	line-height:22px;
+	margin:0;
+	color:#777777;
+	font-size:13px;
+}
+
+
+
+.pricing-plan {
+	border:1px solid #DDDDDD;
+	text-align:center;
+	position:relative;
+}
+
+.pricing-plan h4 {
+	background-color: #333333;
+	color:#FFFFFF;
+	margin:0;
+	padding:15px 0;
+	font-size:26px;
+	text-transform:uppercase;
+	font-weight:300;
+	font-family: 'Open Sans',sans-serif;
+}
+
+.pricing-plan .prize {
+	background-color: #E2E2E2;
+	border:8px solid #EBEBEB;
+	font-size:14px;
+	font-weight:400;
+	color:#777777;
+	margin:20px;
+	padding:5px 0;
+}
+
+.pricing-plan .prize span {
+	font-size:30px;
+	color:#555;
+	font-weight:600;
+	margin-right:5px;
+}
+
+.pricing-plan .prize small {
+	font-size:16px;
+	margin-right:2px;
+}
+
+.pricing-plan ul li {
+	border-bottom:1px dashed #DDDDDD;
+	padding:11px 0;
+	color:#555;
+	text-align:left;
+	margin:0 30px;
+}
+
+.pricing-plan ul li i {
+	margin-right:10px;
+}
+
+.pricing-plan ul li:last-child {
+	border-bottom:0;
+}
+
+.pricing-plan .order-wrapper {
+	background-color: #E9E9E9;
+	border-top:1px solid #DDDDDD;
+}
+
+.pricing-plan .btn {
+	color:#FFFFFF;
+	padding:10px 30px;
+	font-weight:bold;
+	border:0;
+	margin:15px 0;
+	border-radius:0;
+}
+
+
+#team img {
+	border:1px solid #EBEBEB;
+	padding:10px;
+	background-color:#F5F5F5;
+}
+
+#team h4 {
+	color:#555555;
+	font-size:20px;
+	font-weight:300;
+	margin:0px 0 5px;
+	font-family: 'Open Sans', sans-serif;
+	background-color:#EBEBEB;
+	padding:15px;
+}
+
+#team span {
+	font-size:12px;
+	font-weight:bold;
+	margin:10px 10px 5px;
+	display:block;
+}
+
+#team p {
+	color:#777777;
+	font-size:13px;
+	min-height:70px;
+	padding:0 10px;
+}
+
+#team .team-member {
+	box-shadow:0 1px 5px 0px rgba(0,0,0,0.15);
+}
+
+#team .team-member .overlay-wrapper2 {
+	position:relative;
+	background-color:#F5F5F5;
+}
+	
+#team .team-member .overlay-wrapper2 .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+	top:10px;
+    left: 0;
+    display:none;
+    position: absolute;
+    right: 0;
+	height:15%;
+	padding:0px;
+	margin:0 11px;
+	text-align:center;
+}
+
+#team .team-member .overlay-wrapper2 .overlay i {
+	font-size:18px;
+	color:rgba(255, 255, 255, 0.8);
+	display:inline-block;
+	padding:10px 15px 0;
+}
+
+#team .team-member .overlay-wrapper2 .overlay i:hover {
+	color:rgba(255, 255, 255, 1);
+}
+
+
+
+/*------------------------------
+	FOOTER
+------------------------------*/
+
+#footer {
+	background-color:#333333;
+	color:#F0F0F0;
+	padding:30px 0 10px;
+	bottom: 0;
+    min-height: 93px;
+    position: absolute;
+	width: 100%;
+}
+
+#footer p {
+	font-size:13px;
+	margin:0;
+	padding-top:8px;
+}
+
+#footer p a:hover {
+	text-decoration:underline;
+}
+
+#footer ul {
+	float:right;
+}
+
+#footer ul li a {
+	background-color:#444444;
+	color:#F0F0F0;
+}
+
+
+
+#login h2 {
+	margin:5px 0 20px;
+}
+
+#login ul li {
+	line-height:30px;
+	font-size:16px;
+	margin:5px 0 0 20px;
+}
+
+#login ul li i {
+	margin-right:15px;
+}
+
+.form-wrapper {
+	background-color:#FFFFFF;
+	box-shadow:0 1px 2px 0px rgba(0,0,0,0.1);
+}
+
+.form-wrapper h4 {
+	background-color:#666666;
+	color:#FFFFFF;
+	padding:12px 10px 14px;
+	margin:0;
+	text-align:center;
+	font-weight:100;
+	font-size:30px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.form-wrapper form {
+	padding:20px 30px 10px;
+}
+
+.form-wrapper label {
+	font-size: 13px;
+}
+
+.form-wrapper .form-control {
+	box-shadow:0 0 2px 1px rgba(0,0,0,0.05) inset;
+	font-size: 13px;
+}
+
+.form-wrapper .btn {
+	margin:5px 0 10px;
+	padding:8px 13px;
+	font-size: 13px;
+}
+
+.form-wrapper a {
+	font-size: 13px;
+	padding:8px 0 0;
+	cursor:pointer;
+}
+
+.form-wrapper a:hover {
+	text-decoration:underline;
+}
+
+.form-wrapper .checkbox {
+	padding-left:0;
+}
+
+.form-wrapper .checkbox label {
+	color:#333333;
+}
+
+
+
+.form-wrapper #reset-password {
+	border-top:1px dashed #DDDDDD;
+	display:none;
+}
+
+.form-wrapper h5 {
+	color:#555555;
+	margin:5px 0 15px;
+	font-weight:bold;
+	font-size:15px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+#error {
+	padding:120px 0;
+}
+
+.error-box {
+	text-align:center;
+	background-color:#FFFFFF;
+	box-shadow:0 1px 2px 0 rgba(0,0,0,0.1);
+	padding:50px 20px;
+}
+
+.error-box p {
+	font-size:18px;
+	line-height:30px;
+}
+
+/*------------------------------
+	GALLERY
+------------------------------*/
+.course{
+	margin:10px;
+}
+
+.course figure figcaption{
+	text-align:center;
+	font-size:20px;
+	background-color:#CB2027;
+	padding:10px;
+	margin-top:5px;
+	margin-bottom:10px;
+	border-radius:10px;
+}
+
+.course figure figcaption a{
+	color:white;
+}
+
+.course figure figcaption:hover,
+.course figure figcaption a:hover{
+	color:#234465;
+	background-color: #CB2027;
+	opacity:0.5;
+	
+}
+
+.course figure figcaption a:hover{
+	color:white;
+}
+
+.courses-heading > h2{
+	color:black;
+}
+
+.video{
+	background-color: activeborder;
+	border-radius:10px;
+	padding:10px;
+	margin-left:150px;
+}
+
+
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ViWare</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <resource-ref>
+    <description>DB Connection</description>
+    <res-ref-name>jdbc/team</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+  <servlet>
+    <description>Team</description>
+    <servlet-name>HomeController</servlet-name>
+    <servlet-class>controllers.HomeController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeController</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Sign</description>
+    <servlet-name>SignController</servlet-name>
+    <servlet-class>controllers.SignController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignController</servlet-name>
+    <url-pattern>/Sign</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Contact</description>
+    <servlet-name>ContactController</servlet-name>
+    <servlet-class>controllers.ContactController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContactController</servlet-name>
+    <url-pattern>/Contact</url-pattern>
+  </servlet-mapping>
+</web-app>
