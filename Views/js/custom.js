@@ -4,7 +4,7 @@ $(document).ready(function() {
 		$('body').css("background-color","#f0f0f0");
 	}
 	
-  	$('.show-image').magnificPopup({type:'image'});
+  
 	
 	$('#reset-password-toggle').click(function() {
         $('#reset-password').slideToggle(500);
@@ -29,23 +29,7 @@ $(document).ready(function() {
 		
 	}
 	
-	$('.overlay-wrapper').mouseenter(function() {
-		$(this).find('.overlay a:first-child').addClass('animated slideInLeft');
-		$(this).find('.overlay a:last-child').addClass('animated slideInRight');
-    });
 	
-	$('.overlay-wrapper').mouseleave(function() {
-		$(this).find('.overlay a:first-child').removeClass('animated slideInLeft');
-		$(this).find('.overlay a:last-child').removeClass('animated slideInRight');
-    });
-	
-	$('.jcarousel li').mouseenter(function() {
-        $(this).find('p').slideDown(600);
-    });
-	
-	$('.jcarousel li').mouseleave(function() {
-        $(this).find('p').stop().slideUp(600);
-    });
 	
 	
 });

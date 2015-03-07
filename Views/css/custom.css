@@ -36,6 +36,18 @@ img.image-bordered  {
 	padding:4px;
 }
 
+.item{
+	width:900px;
+	height:530px;
+}
+iframe{
+	min-height: 100%;
+	min-width: 100%;
+}
+
+.status-img{
+	margin-top:20px;
+}
 
 
 /* BOXES */
@@ -66,6 +78,7 @@ img.image-bordered  {
 .box ul li:last-child {
 	border-bottom:0;
 }
+
 
 .box ul li i {
 	font-size:18px;
@@ -104,9 +117,7 @@ body div .box.tags ul li i {
 	color:#999999;
 }
 
-#services .row div:hover i {
-	transition-duration:1s;
-}
+
 
 #services h4 {
 	font-size:20px;
@@ -211,12 +222,6 @@ body div .box.tags ul li i {
 	padding:15px;
 }
 
-#team span {
-	font-size:12px;
-	font-weight:bold;
-	margin:10px 10px 5px;
-	display:block;
-}
 
 #team p {
 	color:#777777;
@@ -234,29 +239,7 @@ body div .box.tags ul li i {
 	background-color:#F5F5F5;
 }
 	
-#team .team-member .overlay-wrapper2 .overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-	top:10px;
-    left: 0;
-    display:none;
-    position: absolute;
-    right: 0;
-	height:15%;
-	padding:0px;
-	margin:0 11px;
-	text-align:center;
-}
 
-#team .team-member .overlay-wrapper2 .overlay i {
-	font-size:18px;
-	color:rgba(255, 255, 255, 0.8);
-	display:inline-block;
-	padding:10px 15px 0;
-}
-
-#team .team-member .overlay-wrapper2 .overlay i:hover {
-	color:rgba(255, 255, 255, 1);
-}
 
 
 
@@ -399,12 +382,12 @@ body div .box.tags ul li i {
 ------------------------------*/
 .course{
 	margin:10px;
+	height: 250px;
 }
 
 .course figure figcaption{
 	text-align:center;
 	font-size:20px;
-	background-color:#CB2027;
 	padding:10px;
 	margin-top:5px;
 	margin-bottom:10px;
@@ -413,18 +396,18 @@ body div .box.tags ul li i {
 
 .course figure figcaption a{
 	color:white;
+	
 }
 
 .course figure figcaption:hover,
 .course figure figcaption a:hover{
 	color:#234465;
-	background-color: #CB2027;
-	opacity:0.5;
 	
 }
 
 .course figure figcaption a:hover{
 	color:white;
+	text-decoration:underline;
 }
 
 .courses-heading > h2{
@@ -435,8 +418,26 @@ body div .box.tags ul li i {
 	background-color: activeborder;
 	border-radius:10px;
 	padding:10px;
-	margin-left:150px;
+	
 }
 
+
+.submit-button{
+	margin-top:25px;
+}
+
+label{
+	padding-top:5px;
+}
+
+@media only screen and (max-width: 480px) {
+    /* STYLES HERE for BROWSER WINDOWS with a max-width of 480px. This will work on desktops when the window is narrowed.  */
+    .item{
+       height: 300px;;
+       width: 400px;
+       margin-right: 50px;
+    }
+    
+    
 
 

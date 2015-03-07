@@ -5,23 +5,24 @@
 
 <sql:setDataSource var="ds" dataSource="jdbc/webshop" />
 
-<sql:query var="results" dataSource="${ds}" sql="select * from images limit 10" />
+<sql:query var="results" dataSource="${ds}" sql="select * from courselist limit 10" />
 
 <header class="navbar navbar-default navbar-static-top">
     	<div class="container">
             <div class="navbar-header">
-                <a href="HomeController?action=home" class="navbar-brand"><img src="image/logo.png" class="img-responsive" alt=""></a>
+                <a href="index.jsp" class="navbar-brand"><img src="image/logo.png" class="img-responsive" alt=""></a>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
             </div>
             <div class="navbar-collapse collapse">
             	<ul class="nav navbar-nav">
-                	<li class="active"><a href="HomeController?action=home">Home</a></li>
+                	<li class="active"><a href="index.jsp">Home</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
-							<c:forEach var="image" items="${results.rows}">
+							<c:forEach var="course" items="${results.rows}">
 								<li>
-									<a href="<c:url value="/Sign?action=image&image=${image.id}" />">${image.attribution_name}</a>
+									<!--  <a href="<c:url value="/Sign?action=image&image=${image.id}" />">${image.attribution_name}</a> -->
+									<a href="HomeController?action=home">${course.name}</a>
 								</li>
 							</c:forEach>	
                         </ul>

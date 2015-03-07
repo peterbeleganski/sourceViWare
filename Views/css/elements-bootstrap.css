@@ -3,7 +3,7 @@
 .btn, 
 .btn:hover,
 .btn:focus {
-	color: #FFFFFF;
+	color: white;
 	border:0;
 	border-radius:0;
 }
@@ -18,18 +18,17 @@ body button.btn-default {
 	background-color: #FFFFFF;
     color: #555555;
 }
- 
-body a.btn-normal:hover,
-body a.btn-normal:focus,
-body a.btn-default:hover,
-body a.btn-default:focus,
-body button.btn-normal:hover,
-body button.btn-normal:focus,
-body button.btn-default:hover,
-body button.btn-default:focus {
+
+body a.btn-normal:hover{
 	background-color: #555555;
-	color: #FFFFFF;
+	color:white;
 }
+
+body a.btn-default:hover{
+	color:white;
+	background-color: #555555;
+}
+ 
 
 /* BOOTSTRAP ALERT */
 

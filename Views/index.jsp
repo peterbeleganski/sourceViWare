@@ -14,7 +14,11 @@
                     <a href="HomeController?action=Sign-up" class="btn btn-default">Sign Up</a>
                 </div>
                 <div class="col-sm-7">
-					<img src="image/jumbotron.png" class="img-responsive animated fadeInDown" alt="">
+					
+					
+					<jsp:include page="slideImage.jsp"></jsp:include>
+					<!-- <img src="image/jumbotron.png" class="img-responsive" alt=""> -->
+					
                 </div>
             </div>
         </div>
@@ -108,13 +112,8 @@
             	
                 <div class="col-sm-3">
                 	<div class="team-member">
-                        <div class="overlay-wrapper2">
+                        <div>
                             <img  src="image/Peter.jpg" class="img-responsive" alt="">
-                            <span class="overlay">
-                                <a href=""><i class="fa fa-facebook"></i></a>
-                                <a href=""><i class="fa fa-twitter"></i></a>
-                                <a href=""><i class="fa fa-linkedin"></i></a>
-                            </span>
                         </div>
                         <h4>Peter Beleganski</h4>
                         <span>Web Developer</span>
@@ -123,13 +122,8 @@
                 </div>
                 <div class="col-sm-3">
                 	<div class="team-member">
-                        <div class="overlay-wrapper2">
+                        <div>
                             <img src="image/Daniel.jpg" class="img-responsive" alt="">
-                            <span class="overlay">
-                                <a href=""><i class="fa fa-facebook"></i></a>
-                                <a href=""><i class="fa fa-twitter"></i></a>
-                                <a href=""><i class="fa fa-linkedin"></i></a>
-                            </span>
                         </div>
                         <h4>Daniel Dimitrov</h4>
                         <span>Web Developer</span>
@@ -141,7 +135,6 @@
           
         </div>
     </section>
-    
     <section class="content-item" id="contact">
     	<div class="container">
         	<div class="content-headline"><h2>CONTACT US</h2><h3>If you want to be part in our team leave us a message. </h3></div>

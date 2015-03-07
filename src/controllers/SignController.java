@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.sql.DataSource;
 
+import models.Admin;
 import models.Login_Register;
 
 /**
@@ -95,13 +96,17 @@ public class SignController extends HttpServlet {
 		////////////////////	/* Login Code */ /////////////////////////////////////
 		if (action.equals("login")) {
 			Login_Register User = new Login_Register(conn);
+			Admin admin = new Admin(conn);
+			session.setAttribute("email", email);
 			
 			try {
 				if (User.login(email,password)) {
-					session.setAttribute("email", email);
 					request.getRequestDispatcher("/home.jsp").forward(request, response);
-				}else{
-					request.setAttribute("Invalid Login", message);
+				}else if(admin.login(email, password)){
+					request.getRequestDispatcher("/admin-list-videos.jsp").forward(request, response);
+				}
+				else{
+					request.setAttribute("message", "Invalid Information");
 					request.getRequestDispatcher("/Login.jsp").forward(request, response);
 				}
 			} catch (SQLException e) {

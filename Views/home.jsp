@@ -5,6 +5,10 @@
 <jsp:include page="includes/nav.jsp" />
 
 
+<%
+	if (session.getAttribute("email") != null) {
+%>
+
 <sql:setDataSource var="ds" dataSource="jdbc/webshop" />
 
 <sql:query var="results" dataSource="${ds}" sql="select * from images" />
@@ -25,7 +29,7 @@
 				<figure>
 				<a href="<c:url value="/Sign?action=image&image=${image.id}" />">
 					<img
-					src="${pageContext.request.contextPath}/image/${image.stem}.${image.image_extension}"
+					src="${pageContext.request.contextPath}/image/${image.stem}"
 					class="img-responsive"></a>
 					<figcaption>
 						<a href="<c:url value="/Sign?action=image&image=${image.id}" />">${image.attribution_name}</a>
@@ -36,4 +40,8 @@
 	</div>
 </div>
 </div>
+
+<%}else{ %>
+<jsp:include page="/NotLoged.jsp" />
+<%} %>
 <jsp:include page="includes/footer.jsp" />

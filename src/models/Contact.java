@@ -14,12 +14,17 @@ public class Contact {
 	
 	public void PostMessage(String user, String subject, String message) throws SQLException{
 		
-		String sql = "insert into messages (User, Subject, Message) values ('"+user+"','"+subject+"','"+message+"')";
+		String sql = "insert into messages (User, Subject, Message) values (?,?,?)";
 		
-		PreparedStatement stmt = conn.prepareStatement(sql);
+		 PreparedStatement preparedStmt = conn.prepareStatement(sql);
+	      preparedStmt.setString (1, user);
+	      preparedStmt.setString (2, subject);
+	      preparedStmt.setString (3, message);
+	     
 
-		stmt.execute(sql);
-		stmt.close();
+	      // execute the preparedstatement
+	      preparedStmt.execute();
+		conn.close();
 	}
 
 }

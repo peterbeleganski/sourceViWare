@@ -37,4 +37,13 @@
     <servlet-name>ContactController</servlet-name>
     <url-pattern>/Contact</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description>Admin</description>
+    <servlet-name>AdminController</servlet-name>
+    <servlet-class>controllers.AdminController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminController</servlet-name>
+    <url-pattern>/Admin</url-pattern>
+  </servlet-mapping>
 </web-app>

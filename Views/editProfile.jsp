@@ -28,7 +28,7 @@
 					<div class="form-group">
 						<label for="inputAge" class="">Age</label>
 						<div class="col-offset-0">
-							<input type="range" min="1" max="100">
+							<input type="number" min="1" max="100">
 						</div>
 					</div>
 					<div class="form-group">

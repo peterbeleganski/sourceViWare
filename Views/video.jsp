@@ -23,13 +23,13 @@
 <section class="content-item grey" id="gallery-item">
 	<div class="container">
 		<div class="row">
-			<div class="col-m-10">
-				<iframe class="video" width="900" height="530"
+			<div class="col-m-10 item">
+				<iframe class="video" class="item"
 					src="${image.attribution_url}" frameborder="0" allowfullscreen
 					controls-1></iframe>
 				<!-- <img src="${pageContext.request.contextPath}/image/${imgname}" class="img-responsive" /> -->
 			</div>
-			<div class="col-md-8 col-md-offset-2">
+			<div class="col-md-8">
 				<h2>${image.attribution_name}</h2>
 
 				<div class="box">
@@ -47,11 +47,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-offset-2">
+		<div>
 			<h3>Useful resources</h3>
 		</div>
 
-		<div class="col-md-8 box col-md-offset-2">
+		<div class="col-md-8 box">
 			<c:set var="currCourse" scope="page"
 				value="${image.attribution_name}"></c:set>
 
